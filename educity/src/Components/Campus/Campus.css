@@ -1,0 +1,51 @@
+/* Campus Section */
+.campus {
+    margin: 80px auto;
+    width: 90%;
+    text-align: center;
+}
+
+/* Gallery Container */
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+
+/* Default - Large Screens (4 images in a row) */
+.gallery img {
+    width: 23%;
+    border-radius: 10px;
+    user-select: none;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Hover Effect */
+.gallery img:hover {
+    transform: scale(1.05);
+}
+
+/* Medium Screens (Tablets) - 2 images per row */
+@media (max-width: 1024px) {
+    .gallery {
+        justify-content: center;
+    }
+
+    .gallery img {
+        width: 48%; /* Two images in each row */
+    }
+}
+
+/* Small Screens (Mobile) - Images in a column */
+@media (max-width: 768px) {
+    .gallery {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .gallery img {
+        width: 100%;
+    }
+}

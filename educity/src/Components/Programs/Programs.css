@@ -1,0 +1,102 @@
+/* Programs Section */
+.programs {
+    margin: 80px auto;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: nowrap;
+}
+
+/* Individual Program */
+.program {
+    width: 31%;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+/* Program Image */
+.program img {
+    width: 100%;
+    border-radius: 10px;
+    display: block;
+    user-select: none;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Hover Effect: Slight Image Zoom */
+.program:hover img {
+    transform: scale(1.05);
+}
+
+/* Caption Overlay */
+.caption {
+    border-radius: 10px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 15, 152, 0.6);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    cursor: pointer;
+    opacity: 0;
+    transition: opacity 0.4s ease-in-out, transform 0.4s ease-in-out;
+}
+
+/* Caption Image */
+.caption img {
+    width: 50px;
+    margin-bottom: 10px;
+}
+
+/* Hover Effect: Show Caption */
+.program:hover .caption {
+    opacity: 1;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .programs {
+        gap: 15px;
+    }
+
+    .program {
+        width: 48%; /* Adjust to fit two items per row */
+    }
+}
+
+@media (max-width: 768px) {
+    .programs {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .program {
+        width: 80%; /* Centered and larger for better view */
+    }
+
+    .caption img {
+        width: 40px; /* Adjusted for smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .program {
+        width: 100%;
+    }
+
+    .caption {
+        font-size: 0.9rem; /* Smaller font for mobile */
+    }
+
+    .caption img {
+        width: 35px;
+    }
+}

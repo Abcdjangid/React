@@ -1,0 +1,91 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container{
+  width: 500px;
+  height: 90%;
+  background-color: aqua;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: none;
+  border-radius: 5px;
+}
+
+h1{
+  text-align: center;
+}
+
+.input_container{
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.input_container input{
+  padding: 5px 10px;
+  
+}
+
+.input_container button{
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.error{
+  display: flex;
+  justify-content: center;
+  margin: 10px auto;
+  padding: 5px 10px;
+  border-radius: 8px;
+  font-family: Cambria, serif;
+  font-weight: bold;
+  width: 50%;
+  color: rgb(255, 0, 0);
+  background-color: black;
+}
+
+.chanceofRain{
+  display: flex;
+  justify-content: center;
+  margin: 10px auto;
+  font-weight: bold;
+  font-size: 30px;
+}
+
+img{
+  width: 40%;
+  display: flex;
+  justify-content: center;
+  margin: auto;
+}
+
+.cardContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 5px;
+
+}
+
+.card{
+  width: 30%;
+  border: 1px solid beige;
+  border-radius: 5px;
+  text-align: center;
+  font-weight: bold;
+  font-family: 'Franklin ', sans-serif;
+  cursor: grab;
+  transition: 0.3s ease-in;
+
+}
+
+.card:hover{
+  background-color: gainsboro;
+  transition: 0.3s ease-in;
+}
