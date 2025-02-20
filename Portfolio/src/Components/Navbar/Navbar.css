@@ -1,0 +1,82 @@
+.Navbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 15px 20px;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    font-size: 20px;
+    background-color: black;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+.Navbar a {
+    text-decoration: none;
+    color: inherit;
+    background-color: inherit;
+    cursor: pointer;
+}
+
+.Navbar-right {
+    display: flex;
+    gap: 15px;
+}
+
+.menu-toggle {
+    display: none;
+    font-size: 24px;
+    border: none;
+    background: none;
+    cursor: pointer;
+    z-index: 1100;
+    color: inherit;
+}
+
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: block; 
+    }
+
+    .Navbar-right {
+        position: fixed;
+        top: 0;
+        right: -100%; 
+        width: 30%;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: left;
+        transition: right 0.3s ease-in-out;
+        background-color: inherit;
+        height: 90%;
+    }
+
+    .Navbar-right.open {
+        right: 0; 
+    }
+
+    .Navbar-right a {
+        font-size: 18px;
+        padding: 10px;
+    }
+}
+
+@media (max-width:400px) {
+    .Navbar-right{
+        width: 40%;
+    }
+}
+
+
+@media (max-width:300px) {
+    .Navbar-right{
+        width: 50%;
+    }
+}

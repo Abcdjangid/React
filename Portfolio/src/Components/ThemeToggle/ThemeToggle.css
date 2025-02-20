@@ -1,0 +1,24 @@
+.theme-toggle {
+    background-color: transparent;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    color: inherit;
+    text-align: left;
+  }
+ 
+  
+  .light {
+    background-color: #ffffff;
+    color: #000000;
+  }
+  
+
+  .dark {
+    background-color: #121212;
+    color: #ffffff;
+  }
+
+
+  
+  

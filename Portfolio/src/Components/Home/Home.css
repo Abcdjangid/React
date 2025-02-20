@@ -1,0 +1,90 @@
+.home{
+    margin: 7% 10%;  
+    padding: 30px;
+}
+
+
+.home h1{
+    font-size: 30px;
+}
+
+.home h2{
+    font-size: 35px;
+    margin-top: 5%;
+}
+
+.home p{
+    margin-top: 1%;
+    font-size: 20px;
+}
+
+.social{
+    display: flex;
+    align-items: center;
+    margin-top: 8%;
+    gap: 70px;
+}
+
+.social-icon a{
+    padding: 0 5px;
+}
+
+.social-btn{
+    display: flex;
+    gap: 10px;
+}
+
+
+/* Responsibe css    */
+@media (max-width:700px) {
+    .home{
+        margin: 3% 10%;
+        padding: 10px;
+    }   
+
+    .home h1{
+        font-size: 20px;
+    }
+    
+    .home h2{
+        font-size: 25px;
+        margin-top: 5%;
+    }
+    
+    .home p{
+        margin-top: 1%;
+        font-size: 18px;
+    }
+    
+    .social{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        margin-top: 8%;
+        gap: 10px;
+    }
+    
+    .social-icon a{
+        padding: 0 5px;
+    }
+    
+    .social-btn{
+        display: flex;
+        gap: 10px;
+    }
+}
+
+/* for mobile */
+@media (max-width:370px) {
+    .home h2{
+        font-size: 20px;
+        margin-top: 5%;
+    }
+}
+
+@media (max-width:355px) {
+    .social-btn{
+        display: flex;
+        flex-direction: column;
+    }
+}

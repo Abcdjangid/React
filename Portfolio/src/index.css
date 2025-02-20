@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Fira Code", serif;
+  color: rgb(44, 44, 198);
+}
+
+.btn{
+  padding: 10px 20px;
+  border: 1px solid blue;
+  border-radius: 5px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: 0.5s ease-out;
+}
+
+.btn:hover{
+  background-color: blue;
+  color: white;
+  transition: 0.5s ease-in;
+  font-weight: bold;
+}

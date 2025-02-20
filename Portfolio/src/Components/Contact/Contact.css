@@ -1,0 +1,159 @@
+.contact {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 40px;
+    margin: 7% 10%;
+    padding: 40px;
+}
+
+
+.contact-col {
+    flex: 1;
+    padding: 20px;
+}
+
+.contact-col h3 {
+    font-size: 26px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.contact-col h3 svg {
+    font-size: 22px;
+}
+
+.contact-col p {
+    font-size: 18px;
+    margin-top: 10px;
+    line-height: 1.6;
+}
+
+.contact-col ul {
+    list-style: none;
+    margin-top: 20px;
+    padding: 0;
+}
+
+.contact-col li {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    font-size: 18px;
+    margin-bottom: 12px;
+}
+
+.contact-col li svg {
+    font-size: 22px;
+    color: var(--primary-color);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+label {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid var(--primary-color);
+    border-radius: 6px;
+    font-size: 16px;
+    background-color: var(--input-bg);
+    color: var(--text-color);
+}
+
+textarea {
+    resize: none;
+}
+
+.contact-btn {
+    padding: 12px 18px;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 6px;
+    transition: 0.3s ease;
+    /* color: white; */
+    /* background-color: var(--primary-color); */
+}
+
+.contact-btn:hover {
+    background-color: var(--hover-color);
+}
+
+/* Form submission message */
+span {
+    display: block;
+    font-size: 16px;
+    margin-top: 10px;
+    color: var(--primary-color);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .contact {
+        flex-direction: column;
+        margin: 5% 5%;
+        padding: 20px;
+    }
+
+    .contact-col {
+        padding: 0;
+    }
+
+    .contact-col h3 {
+        font-size: 24px;
+    }
+
+    .contact-col p {
+        font-size: 16px;
+    }
+
+    .contact-col li {
+        font-size: 16px;
+    }
+
+    input, textarea {
+        font-size: 14px;
+    }
+
+    .contact-btn {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 400px) {
+    .contact {
+        margin: 3% 3%;
+        padding: 15px;
+    }
+
+    .contact-col h3 {
+        font-size: 22px;
+    }
+
+    .contact-col p {
+        font-size: 14px;
+    }
+
+    .contact-col li {
+        font-size: 14px;
+    }
+
+    input, textarea {
+        font-size: 13px;
+    }
+
+    .contact-btn {
+        font-size: 14px;
+    }
+}
